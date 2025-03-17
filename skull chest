@@ -1,0 +1,27 @@
+getgenv().BloxFruits = {
+    ["Team"] = "Marines",
+    ["TweenSpeed"] = 350,
+    ["Fruit"] = {
+        ["FruitNotifier"] = false,
+        ["AutoRandom"] = true,
+        ["FruitSniper"] = {
+            ["Enabled"] = false,
+            ["TargetFruits"] = {"Yeti-Yeti", "Dragon-Dragon", "Dough-Dough"},
+        },
+    },
+    ["Farm"] = {
+        ["Enabled"] = true,
+        ["FastMethod"] = false,
+        ["AutoHop"] = false,
+        ["ItemHop"] = false,
+    },
+    ["Webhook"] = {
+        ["Enabled"] = true,
+        ["URL"] = "https://discord.com/api/webhooks/1351093026524500019/K63buQJZV5JirirqjZQjyOyBqgVEyOEz1pJ6J2cIID-PoLIIO5BxTtMaB1PaUNMBm3bE",
+        ["UserId"] = "1315525172589232178",
+    },
+    ["BlackScreen"] = false,
+    ["FpsBoost"] = true,
+    ["AntiIdle"] = true,
+}
+loadstring(game:HttpGet('https://skullhub.xyz/loader.lua'))()
