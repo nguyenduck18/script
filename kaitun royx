@@ -37,7 +37,7 @@ _G.KaitunConfig = {
     ["Race Lock"] = {"Human","Mink","Fishman"},
     ["FPS Cap"] = 60,
     ["Buy Haki Color"] = true,
-    ["Auto Legendary Sword"] = false,
+    ["Auto Legendary Sword"] = true,
     ["Auto TTK"] = false,
     ["Mastery Sword"] = true,
     ["Select Rarity"] = {"Mythical","Legendary"},
@@ -46,11 +46,11 @@ _G.KaitunConfig = {
     ["Allow Eat Fruit In Inventory"] = true,
     ["Start Sniper"] = true,
     ["Safe Fruit"] = {"Dragon-Dragon","Spirit-Spirit","Venom-Venom","Dough-Dough","Kitsune-Kitsune"},
-    ["Link Webhook"] = "https://discord.com/api/webhooks/1351093026524500019/K63buQJZV5JirirqjZQjyOyBqgVEyOEz1pJ6J2cIID-PoLIIO5BxTtMaB1PaUNMBm3bE",
+    ["Link Webhook"] = "https://discord.com/api/webhooks/1353378925295964311/7xwiS-HM8kEmN4NJq-4lafwegUUmjt94HJa7KgZsMQ78H1VwoMM_E_YCBRmPvCoS3Nt2",
     ["Start Webhook"] = true,
     ["Webhook Mode"] = "Send Every .. min",
     ["Webhook Minute"] = 10,
     ["tag user"] = false,
-    ["Send Test Webhook"] = false,
+    ["Send Test Webhook"] = true,
 }
 loadstring(game:HttpGet("https://api.realaya.xyz/v1/files/l/73mkp0aqyfo4ypy8hvl0nz10lq49fey5.lua"))()
