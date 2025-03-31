@@ -39,7 +39,7 @@ wait(1)
 
 -- **Bước 2: Nói chuyện với bia đá (Nhấp chuột 15 lần, delay 0.3 giây)**
 completeQuest()
-clickMouseMultipleTimes(10, 0.1)
+clickMouseMultipleTimes(11, 0.1)
 wait(6)
 
 -- **Bước 3: Dịch chuyển đến đền thờ**
@@ -69,7 +69,7 @@ wait(1)
 
 -- **Bước 8: Nói chuyện với bia đá lần nữa (Nhấp chuột 15 lần, delay 0.3 giây)**
 completeQuest()
-clickMouseMultipleTimes(4, 0.1)
+clickMouseMultipleTimes(5, 0.1)
 wait(6)
 
 -- **Bước 9: Reset nhân vật lần cuối**
