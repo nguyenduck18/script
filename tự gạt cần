@@ -1,0 +1,34 @@
+local player = game.Players.LocalPlayer
+local char = player.Character or player.CharacterAdded:Wait()
+local hrp = char:FindFirstChild("HumanoidRootPart")
+local runService = game:GetService("RunService")
+
+-- Khoảng cách để tự động kích hoạt lever
+local detectRange = 10 
+
+local function findLever()
+    for _, v in pairs(workspace:GetDescendants()) do
+        if v:IsA("ProximityPrompt") and v.Parent and (v.Parent.Position - hrp.Position).Magnitude <= detectRange then
+            return v
+        end
+    end
+    return nil
+end
+
+-- Tự động gạt lever khi đến gần
+runService.Heartbeat:Connect(function()
+    local lever = findLever()
+    if lever then
+        print("🔴 Phát hiện lever! Gạt tự động...")
+        fireproximityprompt(lever)
+        wait(0.5) -- Đợi game phản hồi
+
+        -- Nếu lever cần giữ chuột để gạt, ta có thể tự động giữ và thả
+        local VirtualInputManager = game:GetService("VirtualInputManager")
+        VirtualInputManager:SendMouseButtonEvent(0, 0, 0, true, game, 0) -- Giữ chuột
+        wait(6) -- Điều chỉnh nếu lever load lâu hơn
+        VirtualInputManager:SendMouseButtonEvent(0, 0, 0, false, game, 0) -- Thả chuột
+
+        print("✅ Lever đã được kéo tự động!")
+    end
+end)
