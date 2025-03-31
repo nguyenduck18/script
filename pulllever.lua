@@ -39,8 +39,8 @@ wait(1)
 
 -- **Bước 2: Nói chuyện với bia đá (Nhấp chuột 15 lần, delay 0.3 giây)**
 completeQuest()
-clickMouseMultipleTimes(9, 0.3)
-wait(4)
+clickMouseMultipleTimes(10, 0.1)
+wait(6)
 
 -- **Bước 3: Dịch chuyển đến đền thờ**
 game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("requestEntrance", Vector3.new(28286, 14895, 102))
@@ -69,8 +69,8 @@ wait(1)
 
 -- **Bước 8: Nói chuyện với bia đá lần nữa (Nhấp chuột 15 lần, delay 0.3 giây)**
 completeQuest()
-clickMouseMultipleTimes(2, 0.3)
-wait(3)
+clickMouseMultipleTimes(4, 0.1)
+wait(6)
 
 -- **Bước 9: Reset nhân vật lần cuối**
 game.Players.LocalPlayer.Character:BreakJoints()
